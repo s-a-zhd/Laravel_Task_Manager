@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('about', 'AboutController@index');
 Route::get('todo','TodoController@index');
+Route::get('todo/{todo}','TodoController@show');
