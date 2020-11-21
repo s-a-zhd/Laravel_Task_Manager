@@ -35,6 +35,8 @@ class TodoController extends Controller
         $todo->name = $data["name"];
         $todo->description = $data["description"];
         $todo->save();
+
+        session()->flash('success','Todo Created Successfully');
         return redirect('/todo');
 
     }
